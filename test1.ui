@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>689</width>
+    <height>466</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>TempCalc</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>541</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="ParamWell">
+     <attribute name="title">
+      <string>Параметры скважины</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>471</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="lineEdit_pw2"/>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QLabel" name="label_pw2">
+         <property name="text">
+          <string>Внешний диаметр НКТ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QLabel" name="label_pw3">
+         <property name="text">
+          <string>Теплопроводность НКТ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_14">
+         <property name="currentText">
+          <string>мм</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>мм</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>см</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>м</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="lineEdit_pw4"/>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QLabel" name="label_pw5">
+         <property name="text">
+          <string>Внешний диаметр колонны</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="lineEdit_pw3"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="lineEdit_pw1"/>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QLabel" name="label_pw4">
+         <property name="text">
+          <string>Внутренний диаметр колонны</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_8">
+         <property name="currentText">
+          <string>Вт/м*С</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Вт/м*С</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="5">
+        <widget class="QLabel" name="label_pw">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Параметры скважины</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_10">
+         <property name="currentText">
+          <string>мм</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>мм</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>см</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>м</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="2">
+        <widget class="QLabel" name="label_pw7">
+         <property name="text">
+          <string>Диаметр скважины</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="lineEdit_pw5"/>
+       </item>
+       <item row="7" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_13">
+         <property name="currentText">
+          <string>мм</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>мм</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>см</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>м</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="5" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_11">
+         <property name="currentText">
+          <string>мм</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>мм</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>см</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>м</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLineEdit" name="lineEdit_pw7"/>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLabel" name="label_pw1">
+         <property name="text">
+          <string>Внутренний диаметр НКТ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="2">
+        <widget class="QLineEdit" name="lineEdit_pw9"/>
+       </item>
+       <item row="6" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_9">
+         <property name="currentText">
+          <string>Вт/м*С</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Вт/м*С</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLineEdit" name="lineEdit_pw6"/>
+       </item>
+       <item row="8" column="2">
+        <widget class="QLineEdit" name="lineEdit_pw8"/>
+       </item>
+       <item row="6" column="0" colspan="2">
+        <widget class="QLabel" name="label_pw6">
+         <property name="text">
+          <string>Теплопроводностьо стенки колонны</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_12">
+         <property name="currentText">
+          <string>мм</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>мм</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>см</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>м</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="8" column="0" colspan="2">
+        <widget class="QLabel" name="label_pw8">
+         <property name="text">
+          <string>Теплопроводность цемента</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0" colspan="2">
+        <widget class="QLabel" name="label_pw9">
+         <property name="text">
+          <string>Глубина спуска НКТ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_23">
+         <property name="currentText">
+          <string>Вт/м*С</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Вт/м*С</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="9" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_22">
+         <property name="currentText">
+          <string>м</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>м</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Параметры рабочей жидкости</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>471</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="lineEdit_prj3"/>
+       </item>
+       <item row="5" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_4">
+         <property name="currentText">
+          <string>сПз</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>сПз</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_3">
+         <property name="currentText">
+          <string>Вт/м*С</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Вт/м*С</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_2">
+         <property name="currentText">
+          <string>кг/м^3</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>кг/м^3</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="6" column="0" colspan="2">
+        <widget class="QLabel" name="label_prj6">
+         <property name="text">
+          <string>Расход (объёмный)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QLabel" name="label_prj4">
+         <property name="text">
+          <string>Теплопроводность</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_5">
+         <property name="currentText">
+          <string>м^3/час</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>м^3/час</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="5">
+        <widget class="QLabel" name="label_prj">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Параметры рабочей жидкости</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QLabel" name="label_prj2">
+         <property name="text">
+          <string>Удельная теплоёмкость</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="lineEdit_prj2"/>
+       </item>
+       <item row="6" column="2">
+        <widget class="QLineEdit" name="lineEdit_prj6"/>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QLabel" name="label_prj5">
+         <property name="text">
+          <string>Динамическая вязкость</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="lineEdit_prj4"/>
+       </item>
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="lineEdit_prj5"/>
+       </item>
+       <item row="2" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox">
+         <property name="currentText">
+          <string>Дж/(кг*С)</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Дж/(кг*С)</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QLabel" name="label_prj3">
+         <property name="text">
+          <string>Плотность</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="lineEdit_prj1"/>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLabel" name="label_prj1">
+         <property name="text">
+          <string>Температура на поверхности</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_6">
+         <property name="currentText">
+          <string>С</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>С</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="">
+     <attribute name="title">
+      <string>Параметры породы</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>471</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="5" column="2">
+        <widget class="QLineEdit" name="lineEdit_pp5"/>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QLabel" name="label_pp2">
+         <property name="text">
+          <string>Теплопроводность породы</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="lineEdit_pp1"/>
+       </item>
+       <item row="2" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_19">
+         <property name="currentText">
+          <string>мм</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>мм</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>см</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>м</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QLineEdit" name="lineEdit_pp4"/>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLabel" name="label_pp1">
+         <property name="text">
+          <string>Темп. нейтрального слоя</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="2">
+        <widget class="QLabel" name="label_pp4">
+         <property name="text">
+          <string>Плотность пород</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QLabel" name="label_pp5">
+         <property name="text">
+          <string>Геотермический градиент</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_21">
+         <property name="currentText">
+          <string>мм</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>мм</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>см</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>м</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="5" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_18">
+         <property name="currentText">
+          <string>C/м</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>C/м</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_7">
+         <property name="currentText">
+          <string>С</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>С</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QLabel" name="label_pp3">
+         <property name="text">
+          <string>Теплоёмкость породы</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3" colspan="2">
+        <widget class="QComboBox" name="comboBox_15">
+         <property name="currentText">
+          <string>Вт/м*С</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Вт/м*С</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="5">
+        <widget class="QLabel" name="label_pp">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Параметры породы</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="lineEdit_pp3"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="lineEdit_pp2"/>
+       </item>
+       <item row="6" column="0" colspan="2">
+        <widget class="QLabel" name="label_pp6">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Результаты</string>
+     </attribute>
+     <widget class="QLabel" name="label_graf">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>110</y>
+        <width>35</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_graf">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>200</y>
+        <width>56</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>350</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Заполнить из файла</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>350</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Записать в файл</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>350</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Расчитать</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

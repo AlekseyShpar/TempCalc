@@ -1,0 +1,1 @@
+pyside2-uic "D:\PP\tempcalc\test1.ui" -x -o "D:\PP\tempcalc\test.py"
